@@ -195,7 +195,7 @@ h6 {
   font-size: 24px;
   transition: all 0.4s;
   outline: none !important;
-  background-color: #149ddd;
+  background-color: #F69000;
   color: #fff;
   width: 40px;
   height: 40px;
@@ -259,7 +259,7 @@ section {
 # About
 --------------------------------------------------------------*/
 .about {
-  height: 700px;
+  padding-bottom: 250px;
 }
 .about .content h3 {
   font-weight: 700;
@@ -692,60 +692,66 @@ section {
   margin: 0;
 }
 
-/*--------------------------------------------------------------
-# Contact
---------------------------------------------------------------*/
-.contact {
-  padding-bottom: 130px;
-}
-
+/* contact */
 .contact .info {
+  border-top: 2px solid #5cb874;
+  border-bottom: 2px solid #5cb874;
   padding: 30px;
   background: #fff;
   width: 100%;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
-
 .contact .info i {
   font-size: 20px;
-  color: #fff;
+  color: #5cb874;
   float: left;
   width: 44px;
   height: 44px;
-  background: #F69000;
+  background: #eaf6ed;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50px;
   transition: all 0.3s ease-in-out;
 }
-
 .contact .info h4 {
   padding: 0 0 0 60px;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #050d18;
+  color: #222222;
 }
-
 .contact .info p {
   padding: 0 0 10px 60px;
   margin-bottom: 20px;
   font-size: 14px;
-  color: #173b6c;
+  color: #555555;
 }
-
-.contact .info .email p {
-  padding-top: 5px;
+.contact .info .social-links {
+  padding-left: 60px;
 }
-
-.contact .info .email:hover i,
-.contact .info .address:hover i,
-.contact .info .phone:hover i {
-  background: #F6C624;
+.contact .info .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+  margin-right: 10px;
+}
+.contact .info .social-links a:hover {
+  background: #5cb874;
   color: #fff;
 }
-
+.contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
+  background: #5cb874;
+  color: #fff;
+}
 
 
 @-webkit-keyframes animate-loading {
